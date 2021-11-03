@@ -3,80 +3,80 @@ package e_test2_calculator_with_exception_scanner.copy;
 import java.util.Scanner;
 
 /*
-ì•„ë˜ì˜ ê²°ê³¼ë¥¼ ë‚˜íƒ€ë‚´ëŠ” ì‚¬ì¹™ì—°ì‚° ê³„ì‚°ê¸°ë¥¼ ì™„ì„±í•˜ì‹œì˜¤.
--ì£¼ì˜ ì˜ëª»ëœ ì…ë ¥ì´ ìˆìœ¼ë©´ ì²˜ìŒë¶€í„° ë‹¤ì‹œ ì…ë ¥ì„ ë°›ë„ë¡ 
-ì˜ˆì™¸ì²˜ë¦¬ êµ¬ë¬¸(try catch)ì„ ë„£ì„ê²ƒ
+¾Æ·¡ÀÇ °á°ú¸¦ ³ªÅ¸³»´Â »çÄ¢¿¬»ê °è»ê±â¸¦ ¿Ï¼ºÇÏ½Ã¿À.
+-ÁÖÀÇ Àß¸øµÈ ÀÔ·ÂÀÌ ÀÖÀ¸¸é Ã³À½ºÎÅÍ ´Ù½Ã ÀÔ·ÂÀ» ¹Şµµ·Ï 
+¿¹¿ÜÃ³¸® ±¸¹®(try catch)À» ³ÖÀ»°Í
 
-*** ê³„ì‚°ê¸° ***
-ìˆ˜1 : 10
-ìˆ˜2 : 20
-ì—°ì‚° : +
-ê³„ì‚° ê²°ê³¼ : 30
-ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ê³„ì† : Y , ì¢…ë£Œ : N
+*** °è»ê±â ***
+¼ö1 : 10
+¼ö2 : 20
+¿¬»ê : +
+°è»ê °á°ú : 30
+°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? °è¼Ó : Y , Á¾·á : N
 y
-*** ê³„ì‚°ê¸° ***
-ìˆ˜1 : R
-ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ ì£¼ì„¸ìš”
-*** ê³„ì‚°ê¸° ***
-ìˆ˜1 : 10
-ìˆ˜2 : 20
-ì—°ì‚° : *
-ê³„ì‚° ê²°ê³¼ : 200
-ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ê³„ì† : Y , ì¢…ë£Œ : N
+*** °è»ê±â ***
+¼ö1 : R
+Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØ ÁÖ¼¼¿ä
+*** °è»ê±â ***
+¼ö1 : 10
+¼ö2 : 20
+¿¬»ê : *
+°è»ê °á°ú : 200
+°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? °è¼Ó : Y , Á¾·á : N
 y
-*** ê³„ì‚°ê¸° ***
-ìˆ˜1 : 90
-ìˆ˜2 : 80
-ì—°ì‚° : /
-ê³„ì‚° ê²°ê³¼ : 1
-ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ê³„ì† : Y , ì¢…ë£Œ : N
+*** °è»ê±â ***
+¼ö1 : 90
+¼ö2 : 80
+¿¬»ê : /
+°è»ê °á°ú : 1
+°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? °è¼Ó : Y , Á¾·á : N
 n
-ì¢…ë£Œì…ë‹ˆë‹¤.
+Á¾·áÀÔ´Ï´Ù.
 */
 
 
-public class Test34 {
+public class Test33 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Calc calc = new Calc();
 		while(true) {
-			System.out.println("*** ê³„ì‚°ê¸° ***");
+			System.out.println("*** °è»ê±â ***");
 			
 			try {
-				System.out.print("ìˆ˜1:");
+				System.out.print("¼ö1:");
 				int n1 = sc.nextInt();
 				calc.setN1(n1);
 		
 			
-				System.out.print("ìˆ˜2:");
+				System.out.print("¼ö2:");
 				int n2 = sc.nextInt();
 				calc.setN2(n2);
 	
 			}catch(Exception e){
-				System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ ì£¼ì„¸ìš”");
+				System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØ ÁÖ¼¼¿ä");
 				sc.nextLine();
 				continue;
 			}
 			
-			System.out.print("ì—°ì‚°:");
+			System.out.print("¿¬»ê:");
 			String str = sc.next();
 			if(calc.checkOpErr(str)) {
-				System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤. ë‹¤ì‹œì…ë ¥í•´ ì£¼ì„¸ìš”");
+				System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù. ´Ù½ÃÀÔ·ÂÇØ ÁÖ¼¼¿ä");
 				sc.nextLine();
 				continue;
 			}
 			int res = calc.run(str);
-			System.out.println("ê³„ì‚° ê²°ê³¼ :" + res);
+			System.out.println("°è»ê °á°ú :" + res);
 				
 	
 			
 			
-			System.out.println("ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ê³„ì† : Y , ì¢…ë£Œ : N");
+			System.out.println("°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? °è¼Ó : Y , Á¾·á : N");
 			String strExit = sc.next();
 			System.out.println(strExit.length() + ", " + strExit.charAt(0));
 			if(strExit.equals("N") || strExit.equals("n")) {
-				System.out.println("ì¢…ë£Œì…ë‹ˆë‹¤.");
+				System.out.println("Á¾·áÀÔ´Ï´Ù.");
 				break;
 			}
 			
@@ -95,7 +95,7 @@ class Calc{
 	}
 	int run(String oper) {
 		res = 0;
-		// ì£¼ì˜ : Stringì€ equals() ì‚¬ìš©.
+		// ÁÖÀÇ : StringÀº equals() »ç¿ë.
 		if(oper.equals("*")) {
 			 res = n1 * n2;
 		}else if(oper.equals("-")) {

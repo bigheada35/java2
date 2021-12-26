@@ -13,8 +13,8 @@ public class Ex7_21 {
 
 interface Movable {
 	void move(int x, int y);
+	
+	
 }
 
-void attack(Movable f) {
-	/* 내용 생략*/ 
-}
+

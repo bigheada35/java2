@@ -1,5 +1,3 @@
-package e_test2_calculator_with_exception_scanner.copy;
-
 import java.util.Scanner;
 
 /*
@@ -35,11 +33,11 @@ n
 */
 
 
-public class Test33 {
+public class Test34 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Calc calc = new Calc();
+		Calc2 calc = new Calc2();
 		while(true) {
 			System.out.println("*** °è»ê±â ***");
 			
@@ -85,7 +83,7 @@ public class Test33 {
 	}
 }
 
-class Calc{
+class Calc2{
 	private int n1, n2, res;
 	public void setN1(int n1) {
 		this.n1 = n1;

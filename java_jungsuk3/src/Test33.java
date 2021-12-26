@@ -1,4 +1,3 @@
-package e_test2_calculator_with_exception_scanner.copy;
 
 import java.util.Scanner;
 
